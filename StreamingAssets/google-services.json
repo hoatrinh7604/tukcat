@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "504574859285",
+    "project_id": "ngen-sdk",
+    "storage_bucket": "ngen-sdk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504574859285:android:00446961de16c5e3c9561c",
+        "android_client_info": {
+          "package_name": "com.ngen.sdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504574859285-rr1reakm0ce4bpg9058q4i8bgnjh29ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0B9RkOFytcOJ4rH9oogp_jHlSfnIXRXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504574859285-rr1reakm0ce4bpg9058q4i8bgnjh29ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
