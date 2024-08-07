@@ -1,4 +1,4 @@
-const cacheName = "CatB-Cat Battle-1.0.1";
+const cacheName = "CatB-Cat Battle-1.0.2";
 const contentToCache = [
     "Build/WebGL.loader.js",
     "Build/WebGL.framework.js.unityweb",
@@ -96,7 +96,13 @@ self.addEventListener("fetch", function (e) {
       response = await fetch(e.request);
       const cache = await caches.open(cacheName);
       console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
-      cache.put(e.request, response.clone());
+      if(e.request.method !== "GET") {
+        return Promise.reject('no-match')
+      }
+	   else
+	  {
+		cache.put(e.request, response.clone());
+	  }
       return response;
     })()
   );
